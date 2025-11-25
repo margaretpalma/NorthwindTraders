@@ -5,11 +5,18 @@ import java.sql.*;
 public class Main {
     public static void main(String[] args) {
 
-        String c = "jdbc:mysql://localhost:3306/northwind";
-        String username = "root";
+        String url = "jdbc:mysql://localhost:3306/northwind";
+        String user = "root";
         String password = "yearup";
-        String database = "northwind";
-        String url =
 
+
+        try {
+            Connection connection = DriverManager.getConnection(url, user, password);
+            System.out.println("You're in!");
+        } catch (SQLException e) {
+            System.out.println("error");
+            e.printStackTrace();
+        }
     }
+
 }
