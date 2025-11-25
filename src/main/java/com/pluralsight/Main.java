@@ -13,6 +13,15 @@ public class Main {
         try {
             Connection connection = DriverManager.getConnection(url, user, password);
             System.out.println("You're in!");
+
+
+
+
+
+
+
+
+
         } catch (SQLException e) {
             System.out.println("error");
             e.printStackTrace();
