@@ -15,13 +15,6 @@ public class Main {
             System.out.println("You're in!");
 
 
-
-
-
-
-
-
-
         } catch (SQLException e) {
             System.out.println("error");
             e.printStackTrace();
